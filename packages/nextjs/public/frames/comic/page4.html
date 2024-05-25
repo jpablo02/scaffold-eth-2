@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fc:frame" content="vPrevious" />
+    <meta property="fc:frame:image" content="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/4.png" />
+    <meta property="og:image" content="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/4.png" />
+    <meta property="fc:frame:button:1" content="Previous" />
+    <meta property="fc:frame:button:1:action" content="post_redirect" />
+    <meta property="fc:frame:button:1:target" content="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/3.png" />
+    <meta property="fc:frame:button:2" content="Mint" />
+    <meta property="fc:frame:button:2:action" content="mint_nft" />
+    <meta property="fc:frame:button:2:target" content="https://yourdomain.com/mint-page.html" />
+    <title>Page 6</title>
+</head>
+<body>
+    <h1>Comic Page 6</h1>
+    <img src="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/4.png" alt="Comic Page 6">
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fc:frame" content="vPrevious" />
+    <meta property="fc:frame:image" content="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/4.png" />
+    <meta property="og:image" content="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/4.png" />
+    <meta property="fc:frame:button:1" content="Previous" />
+    <meta property="fc:frame:button:1:action" content="post_redirect" />
+    <meta property="fc:frame:button:1:target" content="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/3.png" />
+    <meta property="fc:frame:button:2" content="Mint" />
+    <meta property="fc:frame:button:2:action" content="mint_nft" />
+    <title>Page 6</title>
+    <script>
+        async function mintNFT() {
+            try {
+                const response = await fetch('https://yourdomain.com/api/mint', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ data: 'data-for-minting' }),
+                });
+                const result = await response.json();
+                if (result.success) {
+                    alert('NFT Minted Successfully!');
+                } else {
+                    alert('Minting failed: ' + result.message);
+                }
+            } catch (error) {
+                alert('An error occurred: ' + error.message);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Comic Page 6</h1>
+    <img src="https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/4.png" alt="Comic Page 6">
+    <button onclick="window.location.href='https://gateway.lighthouse.storage/ipfs/QmcZta3HnRfoANkf4Ao5rn4xyMcyigLghUMq4HieipbZwq/3.png'">Previous</button>
+    <button onclick="mintNFT()">Mint</button>
+</body>
+</html>
